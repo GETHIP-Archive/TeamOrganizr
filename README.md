@@ -6,4 +6,4 @@ Team Organizr project for GETHIP 2016-17.
 - Dhruv Singh (Architect)
 - Taylor Bahr
 - Cate Longo
-- Jake C
+- Jake Cleveland
