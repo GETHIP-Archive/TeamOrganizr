@@ -52,7 +52,13 @@
 				</label>
 			</div>
 			<div>
-				<button name="submit" type="submit" id="contact-submit">Send</button>
+				<button name="submit" type="submit" id="contact-submit" onclick="myfunction()">Send</button>
+
+					<script>
+					function myfunction() {
+						document.getElementById("submit").innerHTML ="Sent";
+					}
+					</script>
 			</div>
 		</form>
 		<!-- /Form -->
