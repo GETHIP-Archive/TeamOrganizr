@@ -26,7 +26,7 @@ i(function() {
 	}
 
 	// Change text inside send button on submit
-	var send = document.getElementById('contact-submit');
+	var send = document.getElementById("contact-submit");
 	if(send) {
 		send.onclick = function () {
 			this.innerHTML = '...Sending';
