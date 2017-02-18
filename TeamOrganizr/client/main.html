@@ -2,9 +2,10 @@
   <title>TeamOrganizr</title>
 </head>
 
-<template name="home">
-  {{content}}
-</template>
+<body>
+  {{> nav}}
+  {{> content}}
+</body>
 
 <template name="content">
   {{>Template.dynamic template=content}}
