@@ -20,3 +20,7 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
   },
 });
+
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
