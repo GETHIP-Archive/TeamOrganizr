@@ -22,3 +22,10 @@ FlowRouter.route('/', {
     BlazeLayout.render("content", {content: "register"});
   }
 });
+
+FlowRouter.route('/', {
+  name: "login",
+  action: function() {
+    BlazeLayout.render("content", {content: "login"});
+  }
+});
