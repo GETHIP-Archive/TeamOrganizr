@@ -1,17 +1,22 @@
 <template name = "homePage">
 
 			<ul class="topnav indextopnav">
-			  <li id="pic">
+			  <li id="pic"> <a href="{{pathFor route = 'homePage'}}">
 				<img src="image2vector.svg" class = "logo" alt="">
-			  </li>
-				<div class="name">
+			  </a> </li>
+				<div class="name"> <a href="{{pathFor route = 'homePage'}}">
 				  <h1 class="name-h1">Team Organizr</h1>
-				</div>
-			  <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
-			  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Accounts</a></li>
-			  <li class="icon">
-				<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-			  </li>
+				</a> </div>
+			  <li><a href="{{pathFor route = 'aboutPage'}}"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+			  {{#if currentUser}}
+				<li><a href="#" class = "logout"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+			  {{else}}
+				<li><a href="{{pathFor route = 'register'}}"><span class="glyphicon glyphicon-user"></span> Create Account </a></li>
+				<li><a href="{{pathFor route = 'login'}}"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+			  {{/if}}
+				  <li class="icon">
+					<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+				  </li>
 			</ul>
 
 		<!-- Carousel -->
