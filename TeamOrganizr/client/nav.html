@@ -8,9 +8,9 @@
 				</a> </div>
 			  <li><a href="{{pathFor route = 'aboutPage'}}"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
 			  {{#if currentUser}}
-				<li><a href="#" class = "logout"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+				<li><a href="#" class = "logout"><span class="glyphicon glyphicon-exit"></span> Logout</a></li>
 			  {{else}}
-				<li><a href="{{pathFor route = 'register'}}"><span class="glyphicon glyphicon-user"></span> Create Account </a></li>
+				<li><a href="{{pathFor route = 'register'}}"><span class="glyphicon glyphicon-plus"></span> Create Account </a></li>
 				<li><a href="{{pathFor route = 'login'}}"><span class="glyphicon glyphicon-user"></span> Login</a></li>
 			  {{/if}}
 				  <li class="icon">
