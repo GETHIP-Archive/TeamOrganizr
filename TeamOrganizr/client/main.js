@@ -54,6 +54,7 @@ Template.login.events({
 		event.preventDefault();
 		var email = $('[name=email]').val();
 		var password = $('[name=password]').val();
+		FlowRouter.go('home');
 		//Meteor.loginWithPassword(email, password);
 	}
 });
