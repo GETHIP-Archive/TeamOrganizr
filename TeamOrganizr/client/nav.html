@@ -1,12 +1,12 @@
 <template name = "nav">
 	<ul class="topnav indextopnav">
-			  <li id="pic"> <a href="{{pathFor route = 'homePage'}}">
-				<img src="image2vector.svg" class = "logo" alt="">
+			  <li id="pic"> <a href="{{pathFor route = 'home'}}">
+				<img src="image2vector.svg" class="logo" alt="">
 			  </a> </li>
-				<div class="name"> <a href="{{pathFor route = 'homePage'}}">
+				<div class="name"> <a href="{{pathFor route = 'home'}}">
 				  <h1 class="name-h1">Team Organizr</h1>
 				</a> </div>
-			  <li><a href="{{pathFor route = 'aboutPage'}}"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+			  <li><a href="{{pathFor route = 'about'}}"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
 			  {{#if currentUser}}
 				<li><a href="#" class = "logout"><span class="glyphicon glyphicon-exit"></span> Logout</a></li>
 			  {{else}}
@@ -14,7 +14,8 @@
 				<li><a href="{{pathFor route = 'login'}}"><span class="glyphicon glyphicon-user"></span> Login</a></li>
 			  {{/if}}
 				  <li class="icon">
-					<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+					<a href="javascript:void(0);" onclick="document.getElementsByClassName('topnav')[0].classList.toggle('responsive');">&#9776;</a>
 				  </li>
 			</ul>
+			
 </template>

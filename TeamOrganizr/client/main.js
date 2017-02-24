@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 
 import './main.html';
 
@@ -17,6 +18,7 @@ Template.register.events({
 	var third = $('[name=third]').val();
 	var fourth = $('[name=fourth]').val();
 	var fifth = $('[name=fifth]').val();
+	console.log(event);
     Accounts.createUser({
       email: email,
       password: password,
@@ -33,17 +35,17 @@ Template.register.events({
       if(error){
         console.log(error.reason);
       } else {
-        Router.go("home");
+        FlowRouter.go('home');
       }
     }
   )}
 });
 
-Template.navigation.events({
+Template.nav.events({
 	'click .logout': function(event){
 		event.preventDefault();
 		Meteor.logout();
-		Router.go('login');
+		FlowRouter.go('login');
 	}
 });
 
@@ -52,14 +54,15 @@ Template.login.events({
 		event.preventDefault();
 		var email = $('[name=email]').val();
 		var password = $('[name=password]').val();
-		Meteor.loginWithPassword(email, password);
+		//Meteor.loginWithPassword(email, password);
 	}
 });
 
-Meteor.loginWithPassword(email, password, function(error){
-	if(error){
-		console.log(error.reason);
-	} else {
-		Router.go("home");
-	}
-});
+//Meteor.loginWithPassword(email, password, function(error){
+	//if(error){
+		//console.log(error.reason);
+	//} else {
+		//Router.go("home");
+	//}
+//});
+
