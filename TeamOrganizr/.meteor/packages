@@ -28,3 +28,4 @@ twbs:bootstrap
 accounts-password
 accounts-ui
 arillo:flow-router-helpers
+aldeed:autoform
