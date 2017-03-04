@@ -8,6 +8,7 @@ import './main.html';
 Template.register.events({
   'submit form': function(event){
     event.preventDefault();
+	//var email = event.target.email;
 	var email = ($('[name=email]').val());
     var password = $('[name=password]').val();
 	var firstName = $('[name=firstName]').val();

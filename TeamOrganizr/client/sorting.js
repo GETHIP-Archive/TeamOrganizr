@@ -1,6 +1,7 @@
-function assignGroups(people, amount) {
+export function assignGroups(people, amount) {
 	var groups = [];
-	var num = people.length/amount;
+	var num = Math.floor(people.length/amount);
+	var offset = people.length % amount;
 	while (people.length > 0) {
 		var person = people.splice(0, 1)[0];
 		scores = _.map(people, function(currentPerson) {
@@ -13,7 +14,13 @@ function assignGroups(people, amount) {
 			return a.score - b.score;
 		}
 		);
-		var currentPeople = scores.splice(scores.length - (num - 1), (num - 1));
+		let count = num;
+		if (offset > 0) {
+			offset--;
+			count++;
+		}
+		console.log("Count:", count);
+		var currentPeople = scores.splice(scores.length - (count - 1), (count - 1));
 		var group = _.map(currentPeople, function(currentPerson) {
 			return currentPerson.person;
 		});
