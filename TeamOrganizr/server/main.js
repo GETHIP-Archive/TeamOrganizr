@@ -1,14 +1,7 @@
 import { Meteor } from 'meteor/meteor';
-import { Strengths } from '../lib/strengths.js';
+import { Strengths } from '../Lib/strengths.js';
 
 export const userData = new Mongo.Collection('userData');
-
-if (Meteor.isServer) {
-	Meteor.publish('userData', function publication() {
-		return userData.find();
-	});
-}
-
 
 Meteor.startup(() => {
 	if (Meteor.isServer) {
@@ -29,7 +22,7 @@ Meteor.startup(() => {
 		})
 		}
 	});
-	
+
 	Meteor.publish("Strengths", function() {
 		return Strengths.find({});
 	});
