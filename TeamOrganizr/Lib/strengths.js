@@ -1,1 +1,1 @@
-const Strengths = new Mongo.Collection('Strengths');
+export const Strengths = new Mongo.Collection('Strengths');
