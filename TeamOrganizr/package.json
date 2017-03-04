@@ -5,7 +5,10 @@
     "start": "meteor run"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
     "babel-runtime": "^6.23.0",
+>>>>>>> 07f5746f6ae280753274c874ee8a64a099cc217f
     "bcrypt": "^1.0.2",
     "meteor-node-stubs": "~0.2.0"
   }
