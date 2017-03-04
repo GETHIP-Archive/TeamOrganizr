@@ -15,7 +15,7 @@ ul.topnav {
 }
 
 .name {
-   color: #16627F;
+   color: #F0F5FF;
    font-family: 'Josefin Slab', serif;
    font-weight: bold;
    margin: 0 0;
@@ -81,7 +81,7 @@ body {
 }
 #footer {
   position: relative;
-  top: 725px;
+  top: 1100px;
 	background-color: #E8E8E8;
 	font-family: 'Open Sans Condensed', sans-serif;
 	padding: 2%;
