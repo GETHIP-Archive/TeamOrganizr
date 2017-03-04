@@ -2,11 +2,12 @@
 	<div class = "aboutSite">
 	{{#with profile}}
 		<div class = "person info">
-		<p class = "aboutHeading">{{firstName}} {{lastName}}</p>
-		<p>{{email}}</p>
-		<p>{{occupation}}</p>
-		<p> {{zip}} </p>
-		
+		<p class = "aboutHeading"> Name: {{firstName}} {{lastName}}</p>
+		<p> Email: {{email}}</p>
+		<p>Occupation: {{occupation}}</p>
+		<p>Zip Code: {{zip}} </p>
+
+		<p><u>Strengths</u></p>
 		{{#each strengths}}
 		<p>{{this}}</p>
 		{{/each}}
