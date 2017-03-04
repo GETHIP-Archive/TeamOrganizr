@@ -29,3 +29,10 @@ FlowRouter.route('/login', {
     BlazeLayout.render("content", {content: "login"});
   }
 });
+
+FlowRouter.route('/profile', {
+  name: "profile",
+  action: function() {
+    BlazeLayout.render("content", {content: "profile"});
+  }
+});
