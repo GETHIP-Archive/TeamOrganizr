@@ -1,13 +1,13 @@
 <template name = "profile">
 	<div class = "aboutSite">
 	{{#with profile}}
+		<p class = "aboutHeading">{{firstName}} {{lastName}}</p>
 		<div class = "person info">
-		<p class = "aboutHeading"> Name: {{firstName}} {{lastName}}</p>
-		<p> Email: {{email}}</p>
-		<p>Occupation: {{occupation}}</p>
-		<p>Zip Code: {{zip}} </p>
+		<p>{{email}}</p>
+		<p>{{occupation}}</p>
+		<p> {{zip}} </p>
+		
 
-		<p><u>Strengths</u></p>
 		{{#each strengths}}
 		<p>{{this}}</p>
 		{{/each}}

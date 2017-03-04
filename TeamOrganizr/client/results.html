@@ -1,12 +1,12 @@
 <template name = "results">
-	<div class = "aboutSite">
 	{{#each groups}}
-	<div class = "person info">
+		<div class = "aboutSite">
 		<p class = "aboutHeading">Group</p>
+		<div class = "person info">
 		{{#each this}}
-			<p>{{firstName}} {{lastName}}</p>
+				<p>{{firstName}} {{lastName}}</p>
 		{{/each}}
-	</div>
+		</div>
+		</div>
 	{{/each}}
-	</div>
 </template>
