@@ -13,7 +13,7 @@ Template.login.events({
 		email = $('[name=email]').val();
 		var password = $('[name=password]').val();
 		FlowRouter.go('home');
-		//Meteor.loginWithPassword(email, password);
+		Meteor.loginWithPassword(email, password);
 	}
 });
 
