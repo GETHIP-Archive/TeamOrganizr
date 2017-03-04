@@ -12,6 +12,6 @@ Template.results.onCreated(function() {
 Template.results.helpers({
 	groups: function() {
 		var groups = Strengths.find().fetch();
-		return assignGroups(groups, 5);
+		return assignGroups(groups, 7);
 	}
 });
