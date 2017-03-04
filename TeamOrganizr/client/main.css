@@ -73,6 +73,8 @@ body {
 	font-size: 12px;
 }
 #footer {
+  position: relative;
+  top: 725px;
 	background-color: #E8E8E8;
 	font-family: 'Open Sans Condensed', sans-serif;
 	padding: 2%;
