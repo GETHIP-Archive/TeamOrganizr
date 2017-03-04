@@ -6,7 +6,10 @@ import { testGroups } from './sorting.js';
 import './main.html';
 
 
-Template.body.onCreated(function bodyOnCreated() {
-	this.state = new ReactiveDict();
-	Meteor.subscribe('userData');
+Template.nav.events({
+	'click .logout': function(event){
+		event.preventDefault();
+		Meteor.logout();
+		FlowRouter.go('login');
+	}
 });

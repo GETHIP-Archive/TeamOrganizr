@@ -8,6 +8,7 @@
 				</a> </div>
 			  <li><a href="{{pathFor route = 'about'}}"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
 			  {{#if currentUser}}
+				<li><a href="{{pathFor route = 'profile'}}"><span class="glyphicon glyphicon-user"></span> Profile </a></li>
 				<li><a href="#" class = "logout"><span class="glyphicon glyphicon-exit"></span> Logout</a></li>
 			  {{else}}
 				<li><a href="{{pathFor route = 'register'}}"><span class="glyphicon glyphicon-plus"></span> Create Account </a></li>
