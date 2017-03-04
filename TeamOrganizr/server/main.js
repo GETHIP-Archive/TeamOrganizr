@@ -11,15 +11,15 @@ Meteor.startup(() => {
 	}
 
 	Meteor.methods({
-		'insert strength': function(firstName, lastName, occupation, zip, strengths) {
+		'insert strengths': function(firstName, lastName, occupation, zip, strengths) {
 			Strengths.insert({
-			userId: (Meteor.userId()),
-			firstName: firstName,
-			lastName: lastName,
-			occupation: occupation,
-			zip: zip,
-			strengths: strengths
-		})
+				userId: Meteor.userId(),
+				firstName: firstName,
+				lastName: lastName,
+				occupation: occupation,
+				zip: zip,
+				strengths: strengths
+			});
 		}
 	});
 
