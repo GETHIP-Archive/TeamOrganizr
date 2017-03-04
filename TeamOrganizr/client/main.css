@@ -1,7 +1,7 @@
 ul.topnav {
     list-style-type: none;
     margin: 15px 15px 15px 15px;
-    padding: 15px 15px 15px 15px;
+    padding: 5px 5px 5px 5px;
     overflow: hidden;
     background-color: gray;
     float: none;
@@ -15,10 +15,17 @@ ul.topnav {
 }
 
 .name {
-   color: #A9A9A9;
+   color: #16627F;
    font-family: 'Josefin Slab', serif;
+   font-weight: bold;
    margin: 0 0;
    padding: 0 0;
+   text-decoration: none;
+
+}
+ .name:hover {
+    text-decoration: none;
+    color: #2154A9;
 }
 .name-h1 {
   margin-top: 10px;
@@ -168,6 +175,7 @@ footer {
   ul.topnav li.icon {
     float: right;
     display: inline-block;
+    vertical-align: top;
   }
   }
 
@@ -177,6 +185,7 @@ footer {
   ul.topnav li.icon {
     float: right;
     display: inline-block;
+    vertical-align: top;
   }
   }
 
@@ -187,14 +196,20 @@ footer {
     position: absolute;
     right: 0;
     top: 0;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
   }
   ul.topnav.responsive li {
-    float: none;
-    display: inline;
+    float: right;
+    display: inline-block;;
+    vertical-align: top;
   }
   ul.topnav.responsive li a {
-    display: block;
+    display: inline-block;
     text-align: left;
+    vertical-align: top;
+    float: right;
   }
   }
 }
