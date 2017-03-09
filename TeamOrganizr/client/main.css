@@ -109,7 +109,8 @@ body {
 .aboutHeading {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 40px;
-  display:inline-block
+  /**display:inline-block**/
+  text-align: center;
 }
 .span
 {
