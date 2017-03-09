@@ -90,7 +90,7 @@ body {
 }
 #footer {
   position: relative;;
-  top: 1200px;
+  top: 1300px;
 	background-color: #FDF3E7;
 	font-family: 'Open Sans Condensed', sans-serif;
 	padding: 2%;
@@ -109,7 +109,11 @@ body {
 .aboutHeading {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 40px;
-	text-align: center;
+  display:inline-block
+}
+.span
+{
+    display: block;
 }
 
 .info {
@@ -120,6 +124,7 @@ body {
 .aboutSite {
 	margin: 5% 10% 5% 10%;
 	text-align: center;
+  position: relative;
 }
 
 .aboutTeam {
