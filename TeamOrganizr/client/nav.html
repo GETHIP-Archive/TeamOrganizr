@@ -6,14 +6,14 @@
 				<div class="name"> <a href="{{pathFor route = 'home'}}" style="text-decoration:none;color:white;">
 				  <h1 class="name-h1">Team Organizr</h1>
 				</a> </div>
-			  <li><a href="{{pathFor route = 'about'}}"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+			  <li><a href="{{pathFor route = 'about'}}" style="-webkit-border-radius: 99px;-moz-border-radius: 99px;order-radius: 99px;"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
 			  {{#if currentUser}}
-				<li><a href="#" class = "logout"><span class="glyphicon glyphicon-exit"></span> Logout</a></li>
-				<li><a href="{{pathFor route = 'results'}}"><span class="glyphicon glyphicon-user"></span> Groups </a></li>
-				<li><a href="{{pathFor route = 'profile'}}"><span class="glyphicon glyphicon-user"></span> Profile </a></li>
+				<li><a href="#" class = "logout" style="-webkit-border-radius: 99px;-moz-border-radius: 99px;order-radius: 99px;"><span class="glyphicon glyphicon-exit"></span> Logout</a></li>
+				<li><a href="{{pathFor route = 'results'}}" style="-webkit-border-radius: 99px;-moz-border-radius: 99px;order-radius: 99px;"><span class="glyphicon glyphicon-user"></span> Groups </a></li>
+				<li><a href="{{pathFor route = 'profile'}}" style="-webkit-border-radius: 99px;-moz-border-radius: 99px;order-radius: 99px;"><span class="glyphicon glyphicon-user"></span> Profile </a></li>
 			  {{else}}
-				<li><a href="{{pathFor route = 'register'}}"><span class="glyphicon glyphicon-plus"></span> Create Account </a></li>
-				<li><a href="{{pathFor route = 'login'}}"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+				<li><a href="{{pathFor route = 'register'}}" style="-webkit-border-radius: 99px;-moz-border-radius: 99px;order-radius: 99px;"><span class="glyphicon glyphicon-plus"></span> Create Account </a></li>
+				<li><a href="{{pathFor route = 'login'}}" style="-webkit-border-radius: 99px;-moz-border-radius: 99px;order-radius: 99px;"><span class="glyphicon glyphicon-user"></span> Login</a></li>
 			  {{/if}}
 				  <li class="icon">
 					<a href="javascript:void(0);" onclick="document.getElementsByClassName('topnav')[0].classList.toggle('responsive');">&#9776;</a>
